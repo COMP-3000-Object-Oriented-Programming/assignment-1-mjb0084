@@ -1,13 +1,16 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std; 
 
 int main(){
 
-    int first = 5; 
-    double second = 7; 
+    int var; 
+    
+    cout << "Input a variable: ";
 
-    cout << "first is: " << first << " " << "second is: " << second << endl ; 
+    cin>>var;
+    cout << var << " " << 2*var << " " << pow(var,2);
 
     return 0; 
 }

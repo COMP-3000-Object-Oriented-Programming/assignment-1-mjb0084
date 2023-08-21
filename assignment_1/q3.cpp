@@ -1,20 +1,29 @@
 #include <iostream>
+#include <cmath>
+
 
 using namespace std; 
 
 int main() {
 
-const int acc = 32; 
-int t; 
-int distance; 
+int max;
+int occupants;
 
-cout << "Enter a time in seconds: "<< endl; 
+cout << "Enter the Maximum occupancy for the room.\n";
+cin >> max;
+cout << max << "\n";
+cout << "Enter the number of occupants of the room.\n";
+cin >> occupants;
+cout << occupants << "\n";
 
-cin>> t; 
+if (occupants > max) {
+    return 0;
+}
 
-distance = (acc/2) * (t*t);
-
-cout<< ""<< t << "will fall in" << distance << "feet"; 
+else {
+    cout << "The number of occupants does not exceed the legal maximum.\n";
+    return 0;
+}
 
 return 0; 
 }
