@@ -8,6 +8,7 @@ int main() {
 
 int max;
 int occupants;
+int diff;
 
 cout << "Enter the Maximum occupancy for the room.\n";
 cin >> max;
@@ -17,6 +18,8 @@ cin >> occupants;
 cout << occupants << "\n";
 
 if (occupants > max) {
+    diff = occupants - max;
+    cout << "ATTENTION: MAXIMUM OCCUPANCY EXCEEDED. THE LAW REQUIRES " << diff << " PERSONS TO LEAVE THE ROOM IMMEDIATELY\n";
     return 0;
 }
 
