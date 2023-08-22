@@ -1,18 +1,15 @@
 #include <iostream>
 
-using namespace std; 
+using namespace std;
 
 
 int main() {
 
-    int a; 
-    cout << "enter a number" << endl; 
-    cin >> a; 
-    cout << "output: " << a * a; 
+    int number;
+    cout << "What number do you want to be squared?\n";
+    cin >> number;
+    cout << number*number; 
 
-    return 0; 
-
+    return 0;
 
 }
-
-
